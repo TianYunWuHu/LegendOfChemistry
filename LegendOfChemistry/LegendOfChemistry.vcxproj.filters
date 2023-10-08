@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="LegendOfChemistry.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtUic Include="LegendOfChemistry.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtMoc Include="LegendOfChemistry.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClCompile Include="LegendOfChemistry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\lib_card.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="lib\lib_card.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="rec\牌背.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\元素离子\Ag.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\元素离子\Al.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\元素离子\Ba.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\元素离子\C.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\元素离子\Ca.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\元素离子\Cl.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\元素离子\Cu.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\元素离子\F.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\元素离子\Fe.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\元素离子\I.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\元素离子\H.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\元素离子\K.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\元素离子\Li.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\元素离子\Mg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\元素离子\Mn.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\元素离子\N.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\元素离子\Na.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\元素离子\O.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\元素离子\P.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\元素离子\S.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\元素离子\Si.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\元素离子\Zn.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\元素离子\铵根离子.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\元素离子\磷酸根离子.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\元素离子\硫酸根离子.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\元素离子\硫酸氢根离子.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\元素离子\氢氧根离子.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\元素离子\碳酸根离子.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\元素离子\碳酸氢根离子.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\元素离子\硝酸根离子.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\条件\催化剂.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\条件\点燃.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\条件\升温.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\条件\通电.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\倍数\x2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\倍数\x3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rec\倍数\x4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
