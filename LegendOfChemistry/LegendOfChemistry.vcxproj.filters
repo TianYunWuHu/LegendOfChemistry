@@ -119,28 +119,28 @@
     <Image Include="rec\元素离子\Zn.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="rec\元素离子\铵根离子.png">
+    <Image Include="rec\元素离子\NH4.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="rec\元素离子\磷酸根离子.png">
+    <Image Include="rec\元素离子\PO4.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="rec\元素离子\硫酸根离子.png">
+    <Image Include="rec\元素离子\SO4.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="rec\元素离子\硫酸氢根离子.png">
+    <Image Include="rec\元素离子\HSO4.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="rec\元素离子\氢氧根离子.png">
+    <Image Include="rec\元素离子\OH.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="rec\元素离子\碳酸根离子.png">
+    <Image Include="rec\元素离子\CO3.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="rec\元素离子\碳酸氢根离子.png">
+    <Image Include="rec\元素离子\HCO3.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="rec\元素离子\硝酸根离子.png">
+    <Image Include="rec\元素离子\NO3.png">
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="rec\条件\催化剂.png">

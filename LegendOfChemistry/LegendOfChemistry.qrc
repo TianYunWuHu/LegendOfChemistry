@@ -1,4 +1,42 @@
 <RCC>
-    <qresource prefix="LegendOfChemistry">
+    <qresource prefix="/LegendOfChemistry">
+        <file>rec/牌背.png</file>
+        <file>rec/元素离子/Ag.png</file>
+        <file>rec/元素离子/Al.png</file>
+        <file>rec/元素离子/Ba.png</file>
+        <file>rec/元素离子/C.png</file>
+        <file>rec/元素离子/Ca.png</file>
+        <file>rec/元素离子/Cl.png</file>
+        <file>rec/元素离子/Cu.png</file>
+        <file>rec/元素离子/F.png</file>
+        <file>rec/元素离子/Fe.png</file>
+        <file>rec/元素离子/H.png</file>
+        <file>rec/元素离子/I.png</file>
+        <file>rec/元素离子/K.png</file>
+        <file>rec/元素离子/Li.png</file>
+        <file>rec/元素离子/Mg.png</file>
+        <file>rec/元素离子/Mn.png</file>
+        <file>rec/元素离子/N.png</file>
+        <file>rec/元素离子/Na.png</file>
+        <file>rec/元素离子/O.png</file>
+        <file>rec/元素离子/P.png</file>
+        <file>rec/元素离子/S.png</file>
+        <file>rec/元素离子/Si.png</file>
+        <file>rec/元素离子/Zn.png</file>
+        <file>rec/条件/催化剂.png</file>
+        <file>rec/条件/点燃.png</file>
+        <file>rec/条件/升温.png</file>
+        <file>rec/条件/通电.png</file>
+        <file>rec/倍数/x2.png</file>
+        <file>rec/倍数/x3.png</file>
+        <file>rec/倍数/x4.png</file>
+        <file>rec/元素离子/CO3.png</file>
+        <file>rec/元素离子/HCO3.png</file>
+        <file>rec/元素离子/HSO4.png</file>
+        <file>rec/元素离子/NH4.png</file>
+        <file>rec/元素离子/NO3.png</file>
+        <file>rec/元素离子/OH.png</file>
+        <file>rec/元素离子/PO4.png</file>
+        <file>rec/元素离子/SO4.png</file>
     </qresource>
 </RCC>
