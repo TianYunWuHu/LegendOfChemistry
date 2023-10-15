@@ -89,15 +89,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\cards.cpp" />
     <QtRcc Include="LegendOfChemistry.qrc" />
     <QtUic Include="LegendOfChemistry.ui" />
     <QtMoc Include="LegendOfChemistry.h" />
     <ClCompile Include="LegendOfChemistry.cpp" />
-    <ClCompile Include="lib\lib_card.cpp" />
+    <ClCompile Include="src\card.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="lib\lib_card.h" />
+    <ClInclude Include="src\card.h" />
+    <ClInclude Include="src\cards.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="rec\倍数\x2.png" />
