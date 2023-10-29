@@ -3,16 +3,20 @@
 
 #include <string>
 #include <time.h>
+#include <fstream>
+#include <qdebug.h>
 
-enum LogLevel { info, warn, error };
+enum LogLevel { info, warn, error,debug };
 
 class logger {
 private:
-	std::string LogfilePath;
+	std::ofstream LogFile;
 
 public:
-	logger(std::string path);
+	logger();
+	~logger();
 	void log(LogLevel level,std::string LogString);
+	static std::string logger::GetTime();
 
 };
 
