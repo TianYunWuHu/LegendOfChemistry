@@ -90,6 +90,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\cards.cpp" />
+    <ClCompile Include="src\log.cpp" />
     <QtRcc Include="LegendOfChemistry.qrc" />
     <QtUic Include="LegendOfChemistry.ui" />
     <QtMoc Include="LegendOfChemistry.h" />
