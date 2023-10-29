@@ -38,5 +38,7 @@
         <file>rec/元素离子/OH.png</file>
         <file>rec/元素离子/PO4.png</file>
         <file>rec/元素离子/SO4.png</file>
+        <file>rec/reacation</file>
+        <file>rec/logo.png</file>
     </qresource>
 </RCC>

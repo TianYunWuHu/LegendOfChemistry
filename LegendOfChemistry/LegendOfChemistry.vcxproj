@@ -104,6 +104,7 @@
     <ClInclude Include="src\log.h" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="rec\logo.png" />
     <Image Include="rec\倍数\x2.png" />
     <Image Include="rec\倍数\x3.png" />
     <Image Include="rec\倍数\x4.png" />
@@ -142,6 +143,9 @@
     <Image Include="rec\条件\点燃.png" />
     <Image Include="rec\条件\通电.png" />
     <Image Include="rec\牌背.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="rec\reacation" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

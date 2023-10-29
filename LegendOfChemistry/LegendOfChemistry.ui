@@ -13,7 +13,49 @@
   <property name="windowTitle">
    <string>化学杀</string>
   </property>
-  <widget class="QWidget" name="centralWidget"/>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>881</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+        <widget class="QLabel" name="logo">
+         <property name="minimumSize">
+          <size>
+           <width>460</width>
+           <height>90</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>460</width>
+           <height>90</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-image: url(:/LegendOfChemistry/rec/logo.png);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>

@@ -176,5 +176,11 @@
     <Image Include="rec\倍数\x4.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="rec\logo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="rec\reacation" />
   </ItemGroup>
 </Project>
