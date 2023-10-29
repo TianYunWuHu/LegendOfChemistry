@@ -100,6 +100,7 @@
   <ItemGroup>
     <ClInclude Include="src\card.h" />
     <ClInclude Include="src\cards.h" />
+    <ClInclude Include="src\log.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="rec\倍数\x2.png" />
