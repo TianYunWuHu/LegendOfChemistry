@@ -1,11 +1,11 @@
-#include "cards.h"
+ï»¿#include "cards.h"
 
-//»ñÈ¡ÅÆ¶Ñ
+//è·å–ç‰Œå †
 std::vector<IonCard> Cards::GetCards() {
 	return cards;
 }
 
-//¼ì²éÅÆ¶ÑÀïÊÇ·ñÓĞÄ³ÕÅÅÆ
+//æ£€æŸ¥ç‰Œå †é‡Œæ˜¯å¦æœ‰æŸå¼ ç‰Œ
 bool Cards::CheckIonElement(std::vector<IonCard> CheckedCards, IonCard CheckedCard) {
 	for (int i = 0; i < CheckedCards.size(); i++) {
 		if (CheckedCards[i] == CheckedCard) return true;

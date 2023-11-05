@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #include <QtWidgets/QMainWindow>
 #include "ui_LegendOfChemistry.h"
@@ -6,15 +6,15 @@
 
 class LegendOfChemistry : public QMainWindow
 {
-    Q_OBJECT
+	Q_OBJECT
 
 public:
-    LegendOfChemistry(QWidget *parent = nullptr);
-    ~LegendOfChemistry();
+	LegendOfChemistry(QWidget* parent = nullptr);
+	~LegendOfChemistry();
 
 private slots:
-    //²Ûº¯ÊýÔÚÕâÀï
+	//æ§½å‡½æ•°åœ¨è¿™é‡Œ
 
 private:
-    Ui::LegendOfChemistryClass ui;
+	Ui::LegendOfChemistryClass ui;
 };

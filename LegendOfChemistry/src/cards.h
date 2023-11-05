@@ -1,4 +1,4 @@
-#ifndef _LOC_CARDS_H_
+﻿#ifndef _LOC_CARDS_H_
 #define _LOC_CARDS_H_
 
 #include <vector>
@@ -10,7 +10,7 @@ private:
 
 public:
 	std::vector<IonCard> GetCards();
-	bool CheckIonElement(std::vector<IonCard> CheckedCards,IonCard CheckedCard);
+	bool CheckIonElement(std::vector<IonCard> CheckedCards, IonCard CheckedCard);
 };
 
 #endif // !_COL_CARDS_H_

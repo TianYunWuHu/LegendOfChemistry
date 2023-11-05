@@ -1,16 +1,17 @@
-#include "log.h"
+ï»¿#include "log.h"
 
-//´ò¿ªÈÕÖ¾ÎÄ¼ş
+//æ‰“å¼€æ—¥å¿—æ–‡ä»¶
 logger::logger() {
-	LogFile.open("latest.log", std::ios::out | std::ios::trunc);
+	LogFile.setFileName("last.log");
+	LogFile.open(QIODevice::WriteOnly | QIODevice::Truncate);
 }
 
-//¹Ø±ÕÈÕÖ¾ÎÄ¼ş
+//å…³é—­æ—¥å¿—æ–‡ä»¶
 logger::~logger() {
 	LogFile.close();
 }
 
-//»ñÈ¡µ±Ç°ÏµÍ³Ê±¼ä
+//è·å–å½“å‰ç³»ç»Ÿæ—¶é—´
 std::string logger::GetTime() {
 	time_t now = time(0);
 	tm* ltm = localtime(&now);
@@ -20,27 +21,28 @@ std::string logger::GetTime() {
 		+ "]");
 }
 
-//Êä³öµ½µ÷ÊÔÌ¨ºÍÈÕÖ¾ÎÄ¼ş
-void logger::log(LogLevel level, std::string LogString) {
+//è¾“å‡ºåˆ°è°ƒè¯•å°å’Œæ—¥å¿—æ–‡ä»¶
+void logger::log(LogLevel level, std::string logString) {
 	QString time = QString::fromStdString(logger::GetTime());
-	QString	QLogString = QString::fromStdString(LogString);
+	QString LogString = QString::fromStdString(logString);
+	QTextStream logFile(&LogFile);
 	switch (level)
 	{
 	case info:
-		qDebug() << time << "[Info]" << QLogString << "\n";
-		LogFile << logger::GetTime() << "[Info]" << LogString << "\n";
+		qDebug() << time + "[Info]" + LogString;
+		logFile << time << "[Info]" << LogString << endl;
 		break;
 	case warn:
-		qDebug() << time << "[Warn]" << QLogString << "\n";
-		LogFile << logger::GetTime() << "[Warn]" << LogString << "\n";
+		qDebug() << time + "[Warn]" + LogString;
+		logFile << time << "[Warn]" << LogString << endl;
 		break;
 	case error:
-		qDebug() << time << "[Error]" << QLogString << "\n";
-		LogFile << logger::GetTime() << "[Error]" << LogString << "\n";
+		qDebug() << time + "[Error]" + LogString;
+		logFile << time << "[Error]" << LogString << endl;
 		break;
 	case debug:
-		qDebug() << time << "[Debug]" << QLogString << "\n";
-		LogFile << logger::GetTime() << "[Debug]" << LogString << "\n";
+		qDebug() << time + "[Debug]" + LogString;
+		logFile << time << "[Debug]" << LogString << endl;
 		break;
 	}
 }

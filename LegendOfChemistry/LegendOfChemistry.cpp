@@ -1,9 +1,9 @@
-#include "LegendOfChemistry.h"
+﻿#include "LegendOfChemistry.h"
 
-LegendOfChemistry::LegendOfChemistry(QWidget *parent)
-    : QMainWindow(parent)
+LegendOfChemistry::LegendOfChemistry(QWidget* parent)
+	: QMainWindow(parent)
 {
-    ui.setupUi(this);
+	ui.setupUi(this);
 }
 
 LegendOfChemistry::~LegendOfChemistry()
