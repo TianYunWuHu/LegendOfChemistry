@@ -1,16 +1,21 @@
 ﻿#ifndef _LOC_CARDS_H_
 #define _LOC_CARDS_H_
 
-#include <vector>
 #include "card.h"
+#include<qvector.h>
 
 class Cards {
 private:
-	std::vector<IonCard> cards;
+	QVector<IonCard> IonVector;
+	QVector<ConditionCard> ConditionVector;
+	QVector<MultipleCard> MultipleVector;
+	int count = 0;
 
 public:
-	std::vector<IonCard> GetCards();
-	bool CheckIonElement(std::vector<IonCard> CheckedCards, IonCard CheckedCard);
+	void addCards(IonCard addCards);
+	void addCards(ConditionCard addCards);
+	void addCards(MultipleCard addCards);
+
 };
 
 #endif // !_COL_CARDS_H_

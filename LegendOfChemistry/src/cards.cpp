@@ -1,14 +1,19 @@
 ﻿#include "cards.h"
 
-//获取牌堆
-std::vector<IonCard> Cards::GetCards() {
-	return cards;
+void Cards::addCards(IonCard addCards) {
+	addCards.ChangeNumber(this->count);
+	IonVector.append(addCards);
+	count += 1;
 }
 
-//检查牌堆里是否有某张牌
-bool Cards::CheckIonElement(std::vector<IonCard> CheckedCards, IonCard CheckedCard) {
-	for (int i = 0; i < CheckedCards.size(); i++) {
-		if (CheckedCards[i] == CheckedCard) return true;
-	}
-	return false;
+void Cards::addCards(ConditionCard addCards) {
+	addCards.ChangeNumber(this->count);
+	ConditionVector.append(addCards);
+	count += 1;
+}
+
+void Cards::addCards(MultipleCard addCards) {
+	addCards.ChangeNumber(this->count);
+	MultipleVector.append(addCards);
+	count += 1;
 }

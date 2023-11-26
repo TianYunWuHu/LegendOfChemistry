@@ -2,7 +2,7 @@
 
 //打开日志文件
 logger::logger() {
-	LogFile.setFileName("last.log");
+	LogFile.setFileName("latest.log");
 	LogFile.open(QIODevice::WriteOnly | QIODevice::Truncate);
 }
 

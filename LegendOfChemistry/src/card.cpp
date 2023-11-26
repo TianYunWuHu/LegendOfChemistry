@@ -1,6 +1,18 @@
 ﻿#include "card.h"
 
-bool IonCard::operator==(IonCard card) {
-	if (this->ThisCardType == card.ThisCardType) return true;
+void Card::ChangeNumber(int num) {
+	this->number = num;
+}
+
+int Card::Number() {
+	return this->number;
+}
+
+IonCard::IonCard(IonCardType cardType) {
+	this->CardType = cardType;
+}
+
+bool IonCard::operator==(IonCard& card) {
+	if (this->CardType == card.CardType) return true;
 	else return false;
 }

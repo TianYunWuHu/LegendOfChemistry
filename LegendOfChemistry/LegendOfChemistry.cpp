@@ -8,3 +8,9 @@ LegendOfChemistry::LegendOfChemistry(QWidget* parent)
 
 LegendOfChemistry::~LegendOfChemistry()
 {}
+
+void LegendOfChemistry::on_pushButton_clicked() {
+	IonCard a(C), b(C), c(Al);
+	Logger.log(debug, QString::number(a == b));
+	Logger.log(debug, QString::number(a == c));
+}
