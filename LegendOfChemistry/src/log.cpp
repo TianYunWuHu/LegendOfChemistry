@@ -11,25 +11,15 @@ logger::~logger() {
 	LogFile.close();
 }
 
-//获取当前系统时间
-std::string logger::GetTime() {
-	time_t now = time(0);
-	tm* ltm = localtime(&now);
-	return ("[" + ((ltm->tm_hour < 10) ? ("0" + std::to_string(ltm->tm_hour)) : std::to_string(ltm->tm_hour))
-		+ ":" + ((ltm->tm_min < 10) ? ("0" + std::to_string(ltm->tm_min)) : std::to_string(ltm->tm_min))
-		+ ":" + ((ltm->tm_sec < 10) ? ("0" + std::to_string(ltm->tm_sec)) : std::to_string(ltm->tm_sec))
-		+ "]");
-}
-
 //输出到调试台和日志文件
-void logger::log(LogLevel level, std::string logString) {
-	QString time = QString::fromStdString(logger::GetTime());
-	QString LogString = QString::fromStdString(logString);
+void logger::log(LogLevel level, QString LogString) {
+	QTime qtime = QTime::currentTime();
+	QString time = qtime.toString("[hh:mm:ss]");
 	QTextStream logFile(&LogFile);
 	switch (level)
 	{
 	case info:
-		qDebug() << time + "[Info]" + LogString;
+		qDebug() << time << "[Iofo]" << LogString;
 		logFile << time << "[Info]" << LogString << endl;
 		break;
 	case warn:
