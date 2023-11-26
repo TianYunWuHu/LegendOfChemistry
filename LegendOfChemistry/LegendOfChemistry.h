@@ -1,7 +1,6 @@
-﻿#pragma once
-
-#include <QtWidgets/QMainWindow>
+﻿#include <QtWidgets/QMainWindow>
 #include "ui_LegendOfChemistry.h"
+#include "src/log.h"
 #include <qprocess.h>
 
 class LegendOfChemistry : public QMainWindow
@@ -14,7 +13,10 @@ public:
 
 private slots:
 	//槽函数在这里
+	void on_pushButton_clicked();
 
 private:
 	Ui::LegendOfChemistryClass ui;
+	//日志对象
+	logger Logger;
 };
